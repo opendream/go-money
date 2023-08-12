@@ -243,6 +243,10 @@ func GetCurrency(code string) *Currency {
 	return currencies.CurrencyByCode(code)
 }
 
+func GetCurrencyByNumericCode(code string) *Currency {
+	return currencies.CurrencyByNumericCode(code)
+}
+
 // Formatter returns currency formatter representing
 // used currency structure.
 func (c *Currency) Formatter() *Formatter {
